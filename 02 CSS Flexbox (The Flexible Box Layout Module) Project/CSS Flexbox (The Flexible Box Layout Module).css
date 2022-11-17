@@ -1,0 +1,46 @@
+.flexbox-container {
+    display: flex;
+    justify-content: center;  /* Styles Flexbox on the Main Axis :  Ex. flex-start; flex-end; space-between; space-around; */
+    align-items: center;  /* Styles Flexbox on the Cross Axis :  Ex. stretch; (Default) center; flex-end; baseline; initial; inherit; */
+
+    /* Try These Properties Together
+           align-content (Using for Multiline Flexbox)  Ex. center; flex-start; flex-end; space-between; space-around;
+           flex-wrap  Ex. nowrap; wrap; wrap-reverse; initial; inherit;  (Changes when shrink a browser site) */
+
+    /* align-content: flex-end; */
+    /* flex-wrap: wrap; */
+    /* height: 700px; */
+
+    /* flex-direction: column */
+    /* height: 800px; */
+}
+
+.flexbox-item {
+    background-color: #dfdfdf;
+    width: 200;
+    margin: 10px;
+    border: 3px solid #333;
+}
+
+.flexbox-item-1 {
+    min-height: 100px;
+    flex: 1 0 0;  /* flex-grow: flex-shrink: flex-basis: */
+    flex-shrink: 0;  /* Not Shrink */
+    align-self: flex-end;
+    order: 3;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+    flex-grow: 2;
+    flex-basis: 0;
+    align-self: center;
+    order: 1;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+    order: 2;
+}
